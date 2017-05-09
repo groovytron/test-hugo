@@ -1,0 +1,58 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Hugo test site"
+
+# Category config
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+# Menu entries
+
+[[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "posts"
+    url = "/post/"
+[[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -100
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "Program"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -100
+    identifier = "program"
+    url = "/program/"
+
+# Mainroad theme config
+
+theme="mainroad"
+
+# [Author]
+#    name = "John Doe"
+#    bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+#    avatar = "img/avatar.png"
+
+
+[Params]
+    subtitle = "A simple experiment whose goal is to test hugo" # Subtitle of your site
+    # description = " John Doe's Personal blog about everything" # Description of your site
+    opengraph = true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = true
+    post_navigation = true
+
+
+[Params.widgets]
+    # search = true # Enable "Search" widget
+    recent_articles = true # Enable "Recent articles" widget
+    recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+        tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
